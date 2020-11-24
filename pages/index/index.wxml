@@ -1,0 +1,9 @@
+<view class="container">
+  <text class="city" >{{weatherweek.country}}・{{weatherweek.city}}</text>
+  <text class="wea">{{weatherweek.wea}} {{weatherweek.tem}}℃</text>
+  <text class="win">{{weatherweek.win}} {{weatherweek.win_speed}}</text>
+  <text>PM2.5: {{weatherweek.air_pm25}} Air:{{weatherweek.air}}</text>
+  <text>空气质量 ：<text style="font-size:48rpx" wx:if="{{weatherweek.air_level}}>100" style="color:red;">{{weatherweek.air_level}}</text></text>
+  <text class="tips">{{weatherweek.air_tips}}</text>
+  <text>更新时间 {{weatherweek.date}} {{weatherweek.update_time}}</text>
+</view>
